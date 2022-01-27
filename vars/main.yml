@@ -4,11 +4,11 @@ install_filetranspiler: false
 staticips: false
 force_ocp_download: false
 remove_old_config_files: false
-ocp_bios: "http://192.168.2.150/dependencies/rhcos-4.9.0-x86_64-live-rootfs.x86_64.img"
-ocp_initramfs: "http://192.168.2.150/dependencies/rhcos-4.9.0-x86_64-live-initramfs.x86_64.img"
-ocp_install_kernel: "http://192.168.2.150/dependencies/rhcos-4.9.0-x86_64-live-kernel-x86_64"
-ocp_client: "http://192.168.2.150/clients/openshift-client-linux-4.9.15.tar.gz"
-ocp_installer: "http://192.168.2.150/clients/openshift-install-linux-4.9.15.tar.gz"
+ocp_bios: "http://192.168.2.150/dependencies/rhcos-4.6.47-x86_64-live-rootfs.x86_64.img"
+ocp_initramfs: "http://192.168.2.150/dependencies/rhcos-4.6.47-x86_64-live-initramfs.x86_64.img"
+ocp_install_kernel: "http://192.168.2.150/dependencies/rhcos-4.6.47-x86_64-live-kernel-x86_64"
+ocp_client: "http://192.168.2.150/clients/openshift-client-linux-4.6.5.tar.gz"
+ocp_installer: "http://192.168.2.150/clients/openshift-install-linux-4.6.5.tar.gz"
 helm_source: "http://192.168.2.150/helm/helm-v3.6.3-linux-amd64.tar.gz"
 chars: (\\_|\\$|\\\|\\/|\\=|\\)|\\(|\\&|\\^|\\%|\\$|\\#|\\@|\\!|\\*)
 ppc64le: false
@@ -22,5 +22,5 @@ setup_registry:
   local_repo: "ocp4/openshift4"
   product_repo: "openshift-release-dev"
   release_name: "ocp-release"
-  release_tag: "4.9.15-x86_64"
+  release_tag: "4.6.5-x86_64"
 machineconfig_path: ../machineconfig
